@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>Gerar Assinatura</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="logo">
+    <img src="HQS_logo.png">
+</div>
+
+    <form id="assinatura" action="form.php" method="post">
+        <p class="nome">Digite o nome completo: <input type="text" class="inputs" name="nome" id="nome"/></p>
+        <p class="cargo">Digite o cargo/setor: <input type="text" class="inputs" name="cargo" id="cargo" /></p>
+        <p class="email">Digite o e-mail: <input type="text" class="inputs" name="email" id="email" ></p><br>
+        <p class="unidade">Escolha a Unidade:  </p><br>
+        <div class="opcoes">
+        <select name="unidade" id="unidade" class="select">
+            <option name="unidade" value="São José dos Pinhais">São José dos Pinhais</option>
+            <option name="unidade" value="São Paulo">São Paulo</option>
+            <option name="unidade" value="Batel">Batel</option>
+        </select>
+        </div><br>
+        <p><input type="submit" class="submit" value="Gerar Assinatura" name="gerar" /></p>
+    </form>
+</body>
+</html>
